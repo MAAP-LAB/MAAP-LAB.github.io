@@ -35,6 +35,7 @@ export const members: Member[] = [
     name: 'Joonyong Park',
     affiliation: 'University of Tokyo',
     role: 'Member',
+    photo: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=iztqExoAAAAJ',
     links: [
       { label: 'Scholar', href: 'https://scholar.google.com/citations?user=iztqExoAAAAJ&hl=en' },
     ],
@@ -71,6 +72,7 @@ export const members: Member[] = [
     name: 'Soo Yong Kim',
     affiliation: 'Seoul National University',
     role: 'Member',
+    photo: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=jSMVF4IAAAAJ',
     links: [
       { label: 'Scholar', href: 'https://scholar.google.com/citations?user=jSMVF4IAAAAJ&hl=ko' },
     ],
