@@ -63,7 +63,8 @@ export const members: Member[] = [
     role: 'Member',
     photo: 'https://github.com/Kumud82.png',
     links: [
-      { label: 'GitHub', href: 'https://github.com/Kumud82' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kumud-dhabhai-171474316/' },
+      { label: 'GitHub',   href: 'https://github.com/Kumud82' },
     ],
   },
   {
