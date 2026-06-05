@@ -76,6 +76,15 @@ export const members: Member[] = [
     ],
   },
   {
+    name: 'Youngjin Na',
+    affiliation: 'University of Nottingham',
+    role: 'Member',
+    photo: 'https://github.com/ppxyn1.png',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ppxyn1' },
+    ],
+  },
+  {
     name: 'Yunjin Chung',
     affiliation: 'KAIST',
     role: 'Member',
