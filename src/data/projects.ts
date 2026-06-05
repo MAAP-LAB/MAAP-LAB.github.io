@@ -17,20 +17,4 @@ export const projects: Project[] = [
       { label: 'Project',     href: 'https://maap-lab.github.io/Jamendo-MT-QA/' },
     ],
   },
-  {
-    title: 'MusicCritic',
-    blurb: 'Test-time scaling for music generation with feature-based and audio-native LLM critics.',
-    status: 'active',
-  },
-  {
-    title: 'Step-Aware GRPO for Music Generation',
-    blurb: 'GRPO-style preference optimization with timestep-dependent reward shaping, applied to DiffRhythm2.',
-    status: 'active',
-    links: [{ label: 'Code', href: 'https://github.com/MAAP-LAB/step-aware-grpo-audio' }],
-  },
-  {
-    title: 'TVSI — Temporal Voice Stability under Streaming Personalization',
-    blurb: 'Measurement study of within-session speaker drift in AR streaming TTS, with a periodic re-anchor fix.',
-    status: 'active',
-  },
 ]
