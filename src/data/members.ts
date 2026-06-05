@@ -76,6 +76,15 @@ export const members: Member[] = [
     ],
   },
   {
+    name: 'Sunghyun Kim',
+    affiliation: 'Northumbria University',
+    role: 'Member',
+    photo: 'https://github.com/gogog01-29-2021.png',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/gogog01-29-2021' },
+    ],
+  },
+  {
     name: 'Youngjin Na',
     affiliation: 'University of Nottingham',
     role: 'Member',
