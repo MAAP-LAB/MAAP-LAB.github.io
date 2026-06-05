@@ -72,14 +72,39 @@ h2 { font-size: 1.5rem; }
 .app {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 32px var(--side-pad) 96px;
+  padding: 24px var(--side-pad) 96px;
+}
+
+/* Site header (persistent across routes) */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 18px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+.site-brand {
+  border: none;
+  text-decoration: none;
+}
+.site-brand:hover { border: none; }
+.brand-mark {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #b03434, #205493);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Top nav */
 .top-nav {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 28px;
 }
 .top-nav ul {
   list-style: none; padding: 0; margin: 0;
@@ -93,6 +118,25 @@ h2 { font-size: 1.5rem; }
   border-bottom: none;
 }
 .top-nav a:hover { color: var(--accent); }
+.top-nav a.active { color: var(--text); }
+
+/* Sub-page header (Members / Publications / Projects) */
+.page { padding-top: 24px; }
+.page-header { margin-bottom: 28px; }
+.page-title {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+.page-lead {
+  color: var(--text-soft);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  margin: 0;
+  max-width: 640px;
+}
 
 /* Hero */
 .hero {
@@ -283,8 +327,12 @@ h2 { font-size: 1.5rem; }
   :root { --side-pad: 16px; }
   html, body { font-size: 14px; line-height: 1.55; }
   .app { padding: 16px var(--side-pad) 64px; }
-  .top-nav { justify-content: center; margin-bottom: 16px; }
+  .site-header { flex-direction: column; gap: 10px; align-items: stretch; padding-bottom: 12px; }
+  .site-brand { text-align: center; }
+  .top-nav { justify-content: center; }
   .top-nav ul { gap: 2px 12px; font-size: 0.82rem; }
+  .page-title { font-size: 1.8rem; }
+  .page-lead { font-size: 0.95rem; }
   .hero { padding: 24px 0 16px; }
   .hero h1 { font-size: 2.6rem; }
   .hero .tagline { font-size: 1.05rem; }

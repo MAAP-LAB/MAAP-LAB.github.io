@@ -1,4 +1,5 @@
-import { members } from '../data/members'
+import { useState } from 'react'
+import { members, type Member } from '../data/members'
 
 function initials(name: string): string {
   return name
@@ -9,18 +10,31 @@ function initials(name: string): string {
     .toUpperCase()
 }
 
+function MemberAvatar({ m }: { m: Member }) {
+  const [failed, setFailed] = useState(false)
+  if (m.photo && !failed) {
+    return (
+      <img
+        className="member-photo"
+        src={m.photo}
+        alt={m.name}
+        loading="lazy"
+        referrerPolicy="no-referrer"
+        onError={() => setFailed(true)}
+      />
+    )
+  }
+  return <div className="member-photo-placeholder">{initials(m.name)}</div>
+}
+
 export function Members() {
   return (
     <div className="members-grid">
       {members.map((m, i) => (
         <div className="member-card" key={i}>
-          {m.photo ? (
-            <img className="member-photo" src={m.photo} alt={m.name} />
-          ) : (
-            <div className="member-photo-placeholder">{initials(m.name)}</div>
-          )}
+          <MemberAvatar m={m} />
           <div className="member-name">{m.name}</div>
-          <span className="member-role">{m.role}</span>
+          {m.role === 'Lead' && <span className="member-role">{m.role}</span>}
           <div className="member-affil">{m.affiliation}</div>
           {m.interests && <div className="member-interests">{m.interests}</div>}
           {m.links && (

@@ -1,24 +1,22 @@
-import { Nav } from './components/Nav'
-import { Hero } from './components/Hero'
-import { Section } from './components/Section'
-import { About } from './components/About'
-import { Members } from './components/Members'
-import { Projects } from './components/Projects'
-import { Publications } from './components/Publications'
-import { News } from './components/News'
-import { ThemeToggle } from './components/ThemeToggle'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from './components/Layout'
+import { Home } from './pages/Home'
+import { MembersPage } from './pages/MembersPage'
+import { ProjectsPage } from './pages/ProjectsPage'
+import { PublicationsPage } from './pages/PublicationsPage'
 
 export function App() {
   return (
-    <div className="app" id="top">
-      <Nav />
-      <Hero />
-      <Section icon="🔥" title="News"         id="news"><News /></Section>
-      <Section icon="🎯" title="About"        id="about"><About /></Section>
-      <Section icon="👥" title="Members"      id="members"><Members /></Section>
-      <Section icon="🛠️" title="Projects"     id="projects"><Projects /></Section>
-      <Section icon="📚" title="Publications" id="publications"><Publications /></Section>
-      <ThemeToggle />
-    </div>
+    <HashRouter>
+      <Layout>
+        <Routes>
+          <Route path="/"             element={<Home />} />
+          <Route path="/members"      element={<MembersPage />} />
+          <Route path="/projects"     element={<ProjectsPage />} />
+          <Route path="/publications" element={<PublicationsPage />} />
+          <Route path="*"             element={<Home />} />
+        </Routes>
+      </Layout>
+    </HashRouter>
   )
 }
