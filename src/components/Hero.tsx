@@ -9,7 +9,11 @@ export function Hero() {
       <div className="hero-links">
         {lab.links.map((l) => (
           <a key={l.label} href={l.href} target={l.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
-            <i className={l.icon} aria-hidden="true" />
+            {l.iconImg ? (
+              <img src={l.iconImg} alt="" className="hero-icon-img" aria-hidden="true" />
+            ) : (
+              <i className={l.icon} aria-hidden="true" />
+            )}
             <span>{l.label}</span>
           </a>
         ))}

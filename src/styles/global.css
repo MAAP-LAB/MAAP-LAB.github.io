@@ -182,6 +182,13 @@ html[data-theme="dark"] .brand-logo { filter: invert(1); }
   font-size: 0.95rem;
 }
 .hero-links a { display: inline-flex; align-items: center; gap: 6px; }
+.hero-icon-img {
+  width: 1em;
+  height: 1em;
+  /* Render official colorful HF logo as a flat silhouette in the current text color */
+  filter: brightness(0) saturate(100%);
+}
+html[data-theme="dark"] .hero-icon-img { filter: brightness(0) saturate(100%) invert(1); }
 
 /* Sections */
 .section {

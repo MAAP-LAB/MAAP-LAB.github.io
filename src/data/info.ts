@@ -8,9 +8,9 @@ export const lab = {
   ],
   contactEmail: 'arsol970812@gmail.com',
   links: [
-    { label: 'GitHub',      href: 'https://github.com/MAAP-LAB',                       icon: 'fab fa-github' },
-    { label: 'HuggingFace', href: 'https://huggingface.co/m-a-a-p',                    icon: 'fas fa-microscope' },
-    { label: 'Modulabs',    href: 'https://modulabs.co.kr/',                            icon: 'fas fa-graduation-cap' },
-    { label: 'Contact',     href: 'mailto:arsol970812@gmail.com',                      icon: 'far fa-envelope' },
-  ],
+    { label: 'GitHub',      href: 'https://github.com/MAAP-LAB',     icon: 'fab fa-github' },
+    { label: 'HuggingFace', href: 'https://huggingface.co/m-a-a-p',  iconImg: '/hf.svg' },
+    { label: 'Modulabs',    href: 'https://modulabs.co.kr/',         icon: 'fas fa-graduation-cap' },
+    { label: 'Contact',     href: 'mailto:arsol970812@gmail.com',    icon: 'far fa-envelope' },
+  ] as Array<{ label: string; href: string; icon?: string; iconImg?: string }>,
 }
