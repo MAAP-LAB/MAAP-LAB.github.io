@@ -93,7 +93,7 @@ h2 { font-size: 1.5rem; }
 }
 .site-brand:hover { border: none; }
 .brand-logo {
-  height: 64px;
+  height: 32px;
   width: auto;
   display: block;
   transition: transform .15s;
@@ -355,7 +355,7 @@ html[data-theme="dark"] .hero-icon-img {
   .hero { padding: 24px 0 16px; }
   .hero-logo { max-width: 280px; margin-bottom: 10px; }
   .hero .tagline { font-size: 1.05rem; }
-  .brand-logo { height: 48px; }
+  .brand-logo { height: 24px; }
   .section { margin-top: 32px; padding-top: 18px; }
   .section-title { font-size: 1.15rem; margin-bottom: 12px; }
   .members-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
