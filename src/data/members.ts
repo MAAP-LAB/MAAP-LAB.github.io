@@ -97,7 +97,7 @@ export const members: Member[] = [
   },
   {
     name: 'Yunjin Chung',
-    affiliation: 'KAIST',
+    affiliation: 'New York University',
     role: 'Member',
     photo: 'https://github.com/yoonjinxd.png',
     links: [
