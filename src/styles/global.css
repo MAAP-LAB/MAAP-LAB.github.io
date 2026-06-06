@@ -11,8 +11,8 @@
   --selection-bg: #1a1a1a;
   --selection-fg: #fdfdfb;
 
-  --font-serif: 'Crimson Pro', 'PT Serif', Georgia, serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Fredoka', 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --content-max: 1040px;
   --side-pad: 32px;
