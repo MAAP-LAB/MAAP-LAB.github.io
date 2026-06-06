@@ -93,7 +93,7 @@ h2 { font-size: 1.5rem; }
 }
 .site-brand:hover { border: none; }
 .brand-logo {
-  height: 52px;
+  height: 64px;
   width: auto;
   display: block;
   transition: transform .15s;
@@ -185,10 +185,14 @@ html[data-theme="dark"] .brand-logo { filter: invert(1); }
 .hero-icon-img {
   width: 1em;
   height: 1em;
-  /* Render official colorful HF logo as a flat silhouette in the current text color */
-  filter: brightness(0) saturate(100%);
+  /* Soft monochrome — grayscale preserves the logo's internal luminance so it
+     doesn't read as a heavy black silhouette next to the line-art FA icons. */
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0.85;
 }
-html[data-theme="dark"] .hero-icon-img { filter: brightness(0) saturate(100%) invert(1); }
+html[data-theme="dark"] .hero-icon-img {
+  filter: grayscale(1) brightness(1.5) contrast(0.9);
+}
 
 /* Sections */
 .section {
@@ -351,7 +355,7 @@ html[data-theme="dark"] .hero-icon-img { filter: brightness(0) saturate(100%) in
   .hero { padding: 24px 0 16px; }
   .hero-logo { max-width: 280px; margin-bottom: 10px; }
   .hero .tagline { font-size: 1.05rem; }
-  .brand-logo { height: 40px; }
+  .brand-logo { height: 48px; }
   .section { margin-top: 32px; padding-top: 18px; }
   .section-title { font-size: 1.15rem; margin-bottom: 12px; }
   .members-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
