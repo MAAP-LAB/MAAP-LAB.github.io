@@ -13,7 +13,7 @@ export interface Member {
 export const members: Member[] = [
   {
     name: 'Junyoung Koh',
-    affiliation: 'Yonsei University · KRAFTON AI',
+    affiliation: 'Yonsei University · KRAFTON',
     role: 'Lead',
     interests: 'Source separation, Multi-pitch estimation, Music QA',
     photo: 'https://junst.github.io/images/profile.jpg',
