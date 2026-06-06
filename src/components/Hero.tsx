@@ -6,7 +6,6 @@ export function Hero() {
       <h1 className="visually-hidden">{lab.name}</h1>
       <img className="hero-logo" src="/textlogo.png" alt={lab.name} />
       <div className="full-name">{lab.fullName}</div>
-      <div className="tagline">{lab.tagline}</div>
       <div className="hero-links">
         {lab.links.map((l) => (
           <a key={l.label} href={l.href} target={l.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">

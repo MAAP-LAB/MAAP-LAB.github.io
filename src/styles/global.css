@@ -81,8 +81,8 @@ h2 { font-size: 1.5rem; }
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-bottom: 18px;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
   border-bottom: 1px solid var(--rule);
 }
 .site-brand {
@@ -150,11 +150,11 @@ html[data-theme="dark"] .brand-logo { filter: invert(1); }
 /* Hero */
 .hero {
   text-align: center;
-  padding: 36px 0 28px;
+  padding: 14px 0 12px;
 }
 .hero-logo {
   width: 100%;
-  max-width: 640px;
+  max-width: 480px;
   height: auto;
   display: block;
   margin: 0 auto 14px;
@@ -185,8 +185,8 @@ html[data-theme="dark"] .brand-logo { filter: invert(1); }
 
 /* Sections */
 .section {
-  margin-top: 56px;
-  padding-top: 28px;
+  margin-top: 28px;
+  padding-top: 18px;
   border-top: 1px solid var(--rule);
 }
 .section-title {
@@ -342,7 +342,7 @@ html[data-theme="dark"] .brand-logo { filter: invert(1); }
   .page-title { font-size: 1.8rem; }
   .page-lead { font-size: 0.95rem; }
   .hero { padding: 24px 0 16px; }
-  .hero-logo { max-width: 360px; margin-bottom: 10px; }
+  .hero-logo { max-width: 280px; margin-bottom: 10px; }
   .hero .tagline { font-size: 1.05rem; }
   .brand-logo { height: 40px; }
   .section { margin-top: 32px; padding-top: 18px; }
