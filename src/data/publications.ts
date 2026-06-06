@@ -9,7 +9,7 @@ export interface Publication {
 export const publications: Publication[] = [
   {
     title: 'Jamendo-MT-QA: A Benchmark for Multi-Track Comparative Music Question Answering',
-    authors: '<strong>Junyoung Koh</strong>, <strong>Jaeyun Lee</strong>, <strong>Soo Yong Kim</strong>, <strong>Gyu Hyeong Choi</strong>, <strong>Jung In Koh</strong>, Jordan Phillips, <strong>Yeonjin Lee</strong>, and Min Song',
+    authors: '<strong>Junyoung Koh</strong>, Jaeyun Lee, <strong>Soo Yong Kim</strong>, <strong>Gyu Hyeong Choi</strong>, Jung In Koh, <strong>Jordan Phillips</strong>, Yeonjin Lee, and Min Song',
     venue: '<a href="https://2026.aclweb.org/">ACL 2026 Findings</a>',
     year: 2026,
     links: [
