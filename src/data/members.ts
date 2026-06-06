@@ -44,8 +44,10 @@ export const members: Member[] = [
     name: 'Jordan Phillips',
     affiliation: 'George Mason University',
     role: 'Member',
+    photo: 'https://ivlab.cs.gmu.edu/images/people/jordan.jpg',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jphillipsvirginia/' },
+      { label: 'IV Lab',   href: 'https://ivlab.cs.gmu.edu/people.html' },
     ],
   },
   {
