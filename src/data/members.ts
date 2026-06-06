@@ -27,6 +27,7 @@ export const members: Member[] = [
     name: 'Gyu Hyeong Choi',
     affiliation: 'Sungkyunkwan University',
     role: 'Member',
+    interests: 'Music Generation',
     links: [
       { label: 'LinkedIn', href: 'https://kr.linkedin.com/in/choi-gyuhyeong-56b0743b3' },
     ],
@@ -35,6 +36,7 @@ export const members: Member[] = [
     name: 'Joonyong Park',
     affiliation: 'University of Tokyo',
     role: 'Member',
+    interests: 'AI Music Detection',
     photo: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=iztqExoAAAAJ',
     links: [
       { label: 'Scholar', href: 'https://scholar.google.com/citations?user=iztqExoAAAAJ&hl=en' },
@@ -44,6 +46,7 @@ export const members: Member[] = [
     name: 'Jordan Phillips',
     affiliation: 'George Mason University',
     role: 'Member',
+    interests: 'Music Representation',
     photo: 'https://ivlab.cs.gmu.edu/images/people/jordan.jpg',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jphillipsvirginia/' },
@@ -53,6 +56,7 @@ export const members: Member[] = [
     name: 'Jungwoo Kim',
     affiliation: 'Yonsei University',
     role: 'Member',
+    interests: 'AI Music Detection',
     photo: 'https://github.com/kjungwoo03.png',
     links: [
       { label: 'Site',   href: 'https://kjungwoo03.github.io' },
@@ -63,6 +67,7 @@ export const members: Member[] = [
     name: 'Kumud Dhabhai',
     affiliation: 'University of Rajasthan',
     role: 'Member',
+    interests: 'TTS',
     photo: 'https://github.com/Kumud82.png',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kumud-dhabhai-171474316/' },
@@ -100,6 +105,7 @@ export const members: Member[] = [
     name: 'Yunjin Chung',
     affiliation: 'New York University',
     role: 'Member',
+    interests: 'TTS',
     photo: 'https://github.com/yoonjinxd.png',
     links: [
       { label: 'Site',   href: 'https://yoonjinxd.github.io' },
