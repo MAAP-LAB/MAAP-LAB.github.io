@@ -47,7 +47,6 @@ export const members: Member[] = [
     photo: 'https://ivlab.cs.gmu.edu/images/people/jordan.jpg',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jphillipsvirginia/' },
-      { label: 'IV Lab',   href: 'https://ivlab.cs.gmu.edu/people.html' },
     ],
   },
   {
