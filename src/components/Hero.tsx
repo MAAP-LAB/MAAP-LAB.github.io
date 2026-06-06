@@ -3,7 +3,8 @@ import { lab } from '../data/info'
 export function Hero() {
   return (
     <header className="hero">
-      <h1>{lab.name}</h1>
+      <h1 className="visually-hidden">{lab.name}</h1>
+      <img className="hero-logo" src="/textlogo.png" alt={lab.name} />
       <div className="full-name">{lab.fullName}</div>
       <div className="tagline">{lab.tagline}</div>
       <div className="hero-links">

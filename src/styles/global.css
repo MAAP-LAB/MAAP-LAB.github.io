@@ -88,17 +88,26 @@ h2 { font-size: 1.5rem; }
 .site-brand {
   border: none;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 .site-brand:hover { border: none; }
-.brand-mark {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  background: linear-gradient(135deg, #b03434, #205493);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+  transition: transform .15s;
+}
+.site-brand:hover .brand-logo { transform: scale(1.04); }
+/* Logo.png is solid black-on-transparent — invert in dark mode so it stays visible */
+html[data-theme="dark"] .brand-logo { filter: invert(1); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* Top nav */
@@ -143,13 +152,12 @@ h2 { font-size: 1.5rem; }
   text-align: center;
   padding: 36px 0 28px;
 }
-.hero h1 {
-  font-size: 4rem;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #b03434, #205493);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.hero-logo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  margin: 0 auto 14px;
 }
 .hero .tagline {
   font-family: var(--font-serif);
@@ -334,8 +342,9 @@ h2 { font-size: 1.5rem; }
   .page-title { font-size: 1.8rem; }
   .page-lead { font-size: 0.95rem; }
   .hero { padding: 24px 0 16px; }
-  .hero h1 { font-size: 2.6rem; }
+  .hero-logo { max-width: 280px; margin-bottom: 10px; }
   .hero .tagline { font-size: 1.05rem; }
+  .brand-logo { height: 30px; }
   .section { margin-top: 32px; padding-top: 18px; }
   .section-title { font-size: 1.15rem; margin-bottom: 12px; }
   .members-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }

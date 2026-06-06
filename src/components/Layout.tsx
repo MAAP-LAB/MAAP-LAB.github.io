@@ -14,8 +14,8 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="app" id="top">
       <header className="site-header">
-        <Link to="/" className="site-brand">
-          <span className="brand-mark">MAAP</span>
+        <Link to="/" className="site-brand" aria-label="MAAP home">
+          <img className="brand-logo" src="/logo.png" alt="MAAP" />
         </Link>
         <nav className="top-nav" aria-label="Primary">
           <ul>
