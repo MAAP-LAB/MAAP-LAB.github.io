@@ -13,8 +13,10 @@ export const publications: Publication[] = [
     venue: '<a href="https://2026.aclweb.org/">ACL 2026 Findings</a>',
     year: 2026,
     links: [
-      { label: 'arXiv', href: 'https://arxiv.org/abs/2604.09721' },
-      { label: 'Code',  href: 'https://github.com/MAAP-LAB/Jamendo-MT-QA' },
+      { label: 'arXiv',  href: 'https://arxiv.org/abs/2604.09721' },
+      { label: 'Code',   href: 'https://github.com/MAAP-LAB/Jamendo-MT-QA' },
+      { label: 'Poster', href: '/assets/poster/Jamendo-MT-QA_Poster.pdf' },
+      { label: 'Video',  href: 'https://youtu.be/yRbXoxEzl7s' },
     ],
   },
   {

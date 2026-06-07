@@ -1,4 +1,5 @@
 import { projects } from '../data/projects'
+import { iconFor } from '../data/linkIcons'
 
 export function Projects() {
   return (
@@ -12,12 +13,18 @@ export function Projects() {
           <div className="project-blurb">{p.blurb}</div>
           {p.links && (
             <div className="project-links">
-              {p.links.map((l, j) => (
-                <span key={j}>
-                  {j > 0 && ' · '}
-                  <a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>
-                </span>
-              ))}
+              {p.links.map((l, j) => {
+                const icon = iconFor(l.label)
+                return (
+                  <span key={j}>
+                    {j > 0 && <span className="sep">·</span>}
+                    <a href={l.href} target="_blank" rel="noopener noreferrer">
+                      {icon && <span className="link-icon" aria-hidden="true">{icon}</span>}
+                      <span className="link-label">{l.label}</span>
+                    </a>
+                  </span>
+                )
+              })}
             </div>
           )}
         </div>

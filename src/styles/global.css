@@ -321,7 +321,25 @@ html[data-theme="dark"] .hero-icon-img {
 .pub-item .pub-authors,
 .pub-item .pub-venue { color: var(--text-soft); font-size: 0.93rem; }
 .pub-item .pub-venue { font-style: italic; }
-.pub-item .pub-links { font-size: 0.85rem; margin-top: 4px; }
+.pub-item .pub-links,
+.project-item .project-links {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+}
+.pub-item .pub-links a,
+.project-item .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pub-item .pub-links .link-icon,
+.project-item .project-links .link-icon { font-size: 0.85em; line-height: 1; }
+.pub-item .pub-links .sep,
+.project-item .project-links .sep { color: var(--text-muted); }
 
 /* News */
 .news ul { list-style-type: square; padding-left: 1.2rem; }

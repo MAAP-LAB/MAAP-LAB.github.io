@@ -1,4 +1,5 @@
 import { publications, type Publication } from '../data/publications'
+import { iconFor } from '../data/linkIcons'
 
 // Conference > Workshop > Preprint/arXiv > Tech report
 function venueRank(v: string): number {
@@ -34,12 +35,18 @@ export function Publications() {
               <div className="pub-venue" dangerouslySetInnerHTML={{ __html: p.venue }} />
               {p.links && p.links.length > 0 && (
                 <div className="pub-links">
-                  {p.links.map((l, j) => (
-                    <span key={j}>
-                      {j > 0 && ' · '}
-                      <a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>
-                    </span>
-                  ))}
+                  {p.links.map((l, j) => {
+                    const icon = iconFor(l.label)
+                    return (
+                      <span key={j}>
+                        {j > 0 && <span className="sep">·</span>}
+                        <a href={l.href} target="_blank" rel="noopener noreferrer">
+                          {icon && <span className="link-icon" aria-hidden="true">{icon}</span>}
+                          <span className="link-label">{l.label}</span>
+                        </a>
+                      </span>
+                    )
+                  })}
                 </div>
               )}
             </div>
