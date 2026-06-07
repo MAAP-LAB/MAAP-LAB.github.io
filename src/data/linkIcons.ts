@@ -6,7 +6,6 @@ export const linkIcons: Record<string, string> = {
   code:        '💻',
   huggingface: '🤗',
   project:     '🌐',
-  civitai:     '🎨',
   poster:      '🖼️',
   video:       '🎬',
 }
