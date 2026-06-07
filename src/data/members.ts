@@ -39,6 +39,7 @@ export const members: Member[] = [
     interests: 'AI Music Detection',
     photo: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=iztqExoAAAAJ',
     links: [
+      { label: 'Site',    href: 'https://nonmetal.github.io/' },
       { label: 'Scholar', href: 'https://scholar.google.com/citations?user=iztqExoAAAAJ&hl=en' },
     ],
   },
