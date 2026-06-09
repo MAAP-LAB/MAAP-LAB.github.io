@@ -38,6 +38,10 @@ export const publications: Publication[] = [
     authors: '<strong>Joonyong Park</strong>, <strong>Jungwoo Kim</strong>, <strong>Junyoung Koh</strong>, and Yuki Saito',
     venue: '<a href="https://mlforaudioworkshop.github.io/">ICML 2026 Workshop on Machine Learning for Audio</a>',
     year: 2026,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2606.08663' },
+      { label: 'PDF',   href: 'https://arxiv.org/pdf/2606.08663' },
+    ],
   },
   {
     title: 'Probing-Based Test-Time Steering of Music Diffusion Transformers',
