@@ -94,6 +94,15 @@ export const members: Member[] = [
     ],
   },
   {
+    name: 'Thomas Sesmat',
+    affiliation: 'Deezer',
+    role: 'Member',
+    interests: 'Research Scientist',
+    links: [
+      { label: 'Scholar', href: 'https://scholar.google.com/citations?user=WVp85zF-vIsC&hl=fr' },
+    ],
+  },
+  {
     name: 'Youngjin Na',
     affiliation: 'University of Nottingham',
     role: 'Member',
