@@ -1,12 +1,13 @@
 import { publications, type Publication } from '../data/publications'
 import { iconFor } from '../data/linkIcons'
 
-// Conference > Workshop > Preprint/arXiv > Tech report
+// Conference > Workshop > Under review > Preprint/arXiv > Tech report
 function venueRank(v: string): number {
   const s = v.toLowerCase()
   if (s.includes('workshop')) return 2
-  if (s.includes('preprint') || s.includes('arxiv')) return 3
-  if (s.includes('technical report')) return 4
+  if (s.includes('under review')) return 3
+  if (s.includes('preprint') || s.includes('arxiv')) return 4
+  if (s.includes('technical report')) return 5
   return 1 // assume main conference
 }
 

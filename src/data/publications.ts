@@ -50,6 +50,18 @@ export const publications: Publication[] = [
     year: 2026,
   },
   {
+    title: 'Token Space Matters under Generator Shift: A Controlled Study of AI-Generated Music Detection',
+    authors: '<strong>Joonyong Park</strong>, <strong>Jungwoo Kim</strong>, <strong>Junyoung Koh</strong>, and Yuki Saito',
+    venue: 'Under Review',
+    year: 2026,
+  },
+  {
+    title: 'Neural Audio Codec for Robust Audio Deepfake Detection',
+    authors: '<strong>Jungwoo Kim</strong>, <strong>Joonyong Park</strong>, <strong>Junyoung Koh</strong>, and Jong-Seok Lee',
+    venue: 'Under Review',
+    year: 2026,
+  },
+  {
     title: 'Jamendo-QA: A Large-Scale Music Question Answering Dataset',
     authors: '<strong>Junyoung Koh</strong>, <strong>Sooyong Kim</strong>, <strong>Yongwon Choi</strong>, and <strong>Gyuhyeong Choi</strong>',
     venue: 'arXiv preprint',
