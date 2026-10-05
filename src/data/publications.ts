@@ -50,6 +50,16 @@ export const publications: Publication[] = [
     year: 2026,
   },
   {
+    title: 'Revisiting Input Time-frequency Representations in Multi-pitch Estimation for Vocal Ensembles',
+    authors: '<strong>Junyoung Koh</strong> and Hao-Wen Dong',
+    venue: 'Under Review',
+    year: 2026,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2610.03656' },
+      { label: 'PDF',   href: 'https://arxiv.org/pdf/2610.03656' },
+    ],
+  },
+  {
     title: 'Token Space Matters under Generator Shift: A Controlled Study of AI-Generated Music Detection',
     authors: '<strong>Joonyong Park</strong>, <strong>Jungwoo Kim</strong>, <strong>Junyoung Koh</strong>, and Yuki Saito',
     venue: 'Under Review',
