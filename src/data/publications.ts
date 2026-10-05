@@ -70,6 +70,10 @@ export const publications: Publication[] = [
     authors: '<strong>Jungwoo Kim</strong>, <strong>Joonyong Park</strong>, <strong>Junyoung Koh</strong>, and Jong-Seok Lee',
     venue: 'Under Review',
     year: 2026,
+    links: [
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2609.39651' },
+      { label: 'PDF',   href: 'https://arxiv.org/pdf/2609.39651' },
+    ],
   },
   {
     title: 'Jamendo-QA: A Large-Scale Music Question Answering Dataset',
